@@ -22,9 +22,9 @@ let image = document.querySelector('.image');
 //   - The `location` paragraph.
 
 contentButton.addEventListener('click', function() {
-
-
-
+myName.innerHTML="My name is Chemi";
+myHobby.innerHTML="I love to read fantasy books"
+myLocation.innerHTML="I live in Woodside, NY"
 
 
 
@@ -32,14 +32,21 @@ contentButton.addEventListener('click', function() {
 
 // 3. Add an event listener to the `image1Button`
 // 4. When clicked, it should change the source of `image` to another image URL.
-
+image1Button.addEventListener('click', function(){
+  image.src="https://environmentamerica.org/wp-content/uploads/2023/02/EAC_Otters_savethem-e1695676447396.jpg";
+})
 
 
 
 
 // 5. Add an event listener to the `image2Button`
 // 6. When clicked, it should change the source of `image` to another image URL.
-
+image2Button.addEventListener('click', function(){
+  image.src="https://assets-prd.ignimgs.com/2023/10/17/kong-main-1697541690637.png";
+})
 
 // BONUS
 // 7. Try using different event types for your buttons.
+contentButton.addEventListener("mouseover", function(){
+contentButton.style.backgroundColor ="blue";
+})
